@@ -12,7 +12,7 @@ body{
 
 #formulaire{
     display: flex;
-    
+    background-color: rgba(22, 107, 182, 0.654);
     width: 40vw;
     height: 20%;
     align-items: center;
