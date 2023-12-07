@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/classement.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav">
+                <div class="flex-items"><a href="gamemode.html">Home</a></div>
+                <div class="flex-items" id="div-navbar-img"><a href="gamemode.html" id="nav-img"><img src="https://www.icone-gif.com/gif/jeux-classique/cartes/cartes006.gif"></a></div>
+                <div class="flex-items"><a href="inscription.html">Inscription</a></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="main-container">
+        {% if request.user.is_authenticated %}
+            {{ request.user.username }} - Score : {{ request.POST.score }}
+        {% else %}
+            Non connecté
+        {% endif %}
+
+        <!-- Afficher les scores depuis la base de données -->
+        <h2>Classement :</h2>
+        <ul>
+            {% for game in games %}
+                <li>{{ game.player }} - Score : {{ game.score_game }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>

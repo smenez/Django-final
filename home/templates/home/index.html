@@ -1,0 +1,26 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/475/673/png-transparent-lollipop-candy-hand-painted-lollipop-watercolor-painting-food-photography.png">
+</head>
+<body>
+    <!-- header -->
+    <!-- Top navigation -->
+
+    <header>
+        <nav>
+            <div class="topnav">
+                <div class="flex-items"><a href="index.html">Home</a></div>
+                <div class="flex-items" id="div-navbar-img"><a href="gamemode.html" id="nav-img"><img src="https://cdn.discordapp.com/attachments/1182089346598314026/1182100064903106660/image.png?ex=65837779&is=65710279&hm=992b8b609f3a35f920677ffd777e497d4626bdc9e0126c7f87deff2b023ec5d2&"></a></div>
+                <div class="flex-items" id="div-navbar-img"><a href="connexion.html" id="nav-img"><img src="https://cdn.discordapp.com/attachments/1182089346598314026/1182100514884817036/image.png?ex=658377e5&is=657102e5&hm=e35144528f4387173549526a2ca5dfb83d44032c6941278c3bec69ea1841b299&"></a></div>
+                <div class="flex-items"><a href="{% url 'deconnexion' %}">Quitter</a></div>
+                <div class="flex-items"><a href="{% url 'profil' %}">Quitter</a></div>
+            </div>
+        </nav>
+    </header>
+    <!-- intérieur de la page -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(70, 20, 91);
+}
+
+#user{
+    font-size: 30px;
+    color: white;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#profil{
+    margin-top: -114px;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+img{
+    transition: transform 0.5s;
+}
+  
+img:hover{
+    transform: scale(1.19);
+}

@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/1165990850875117678/1182433612931547156/image_2023-12-07_222846680-modified.png?ex=6584ae1d&is=6572391d&hm=6c77f774326c962752cc09e64e767a9a62d22af8ec76fd07024f002166f5c060&);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#input{
+    background-color: rgba(250, 235, 215, 0);
+    border-color: rgba(22, 107, 182, 0.654);
+    color: antiquewhite;
+    width: 100%;
+    height: 100%;
+}
+
+#formulaire{
+    display: flex;
+    background-color: rgba(22, 107, 182, 0.654);
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+}
+
+#formulaire form{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#input_connexion{
+    background-color: rgba(250, 235, 215, 0);
+    border-color: rgba(22, 107, 182, 0.654);
+    color: rgb(227, 217, 197);
+    width: 103.2%;
+    height: 100%;
+}

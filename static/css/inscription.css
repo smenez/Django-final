@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://cdn.discordapp.com/attachments/1165990850875117678/1182347701887705098/image.png?ex=65845e1b&is=6571e91b&hm=adeffd8650309d1ab336249630eab70ae556402a683ca4e196f180592c1c4be3&);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#inscription{
+    background-color: rgba(250, 235, 215, 0.663);
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+}
+
+#mainbox form{
+    display: flex;
+    justify-content: center;
+}
+
+#mainbox{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/memory_game.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/475/673/png-transparent-lollipop-candy-hand-painted-lollipop-watercolor-painting-food-photography.png">
+</head>
+<body>
+    {% csrf_token %}
+    <div id='overall_continue'>
+        <div id="navbar">
+            <a href="gamemode.html"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182297705687564298/image.png?ex=65842f8b&is=6571ba8b&hm=94b99ab11fcd73ee81d550891bab5e7c84cca96213fef0373ab9d9454621c1db&" id="backbutton"></a>
+            <div id="profilbar">
+                <div id="profil">
+                    <a href="profil.html"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182458299220774912/image_1-removebg-preview.jpg?ex=6584c51b&is=6572501b&hm=db891545cbf4aec9a649bf7bd7c1f0a0bebdfbca78cc69848a434a1107a513e6&" width="130px" height="130px"></a>
+                </div>
+                <div id="profil">
+                <a href="classement.html"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182460066759192687/image.png?ex=6584c6c0&is=657251c0&hm=eebe2f64081a34ed7e064393301d2387007ad3579ba8e5d999702ab27a9f936e&" height="130px"></a>
+                </div>
+            </div>  
+        </div>
+        <div id="rules">
+            <h1>Mem<img src="https://cdn.discordapp.com/attachments/1182089346598314026/1182100514884817036/image.png?ex=658377e5&is=657102e5&hm=e35144528f4387173549526a2ca5dfb83d44032c6941278c3bec69ea1841b299&" width=26.5px>ry Game</h1>
+            <p>Règle : Votre objectif est de trouver les 18 paires de cartes le plus rapidement possible. Bonne chance !</p>
+        </div>
+
+    </div>
+
+    <h2>
+        <div id="score">
+            <p id="scorebox">
+            0/18
+            </p>
+        </div>
+            
+        <div id="stopwatch">
+            00:00
+        </div>
+    </h2>
+    
+    <div id='continue-container'>
+        <div id='continue' style="display: none;">
+            <p>Félicitations ! Voulez vous rejouer ?</p>
+            <div>
+                <button class="menubutton" onclick="replay()"><img src="https://cdn.discordapp.com/attachments/1182089346598314026/1182112836302942269/image.png?ex=6583835e&is=65710e5e&hm=9b057e84c26a8fa732c1daa85a5177d02c9d180eed1bca31d2cba2da7a8abf75&"></button>
+            </div>
+            <div>
+                <a href="../home/classement.html"><button class="menubutton"><img src="https://cdn.discordapp.com/attachments/1182089346598314026/1182113000707063939/image.png?ex=65838385&is=65710e85&hm=142bdaf8d4bb20f2a596ce9bd600d94f267e1a82158b918ae1576720ee252633&"></button></a>
+            </div>
+                
+            
+        </div>
+    </div> 
+
+
+    <div id='overall_continue2'>
+        <div id='startbutton'>
+            <button onclick="startMemoryGame()" class="menubutton"><img src="https://cdn.discordapp.com/attachments/1159173141554282647/1182123853007290429/image.png?ex=65838da1&is=657118a1&hm=e4835db8d10680032cf82822c13cc493eacb94c8259482c000fc43349e639a74&"></button>
+        </div>
+
+
+        <div id="memory-game-container">
+            <!-- La grille du jeu sera insérée ici par JavaScript -->
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/memory_game.js' %}"></script>
+</body>
+</html>

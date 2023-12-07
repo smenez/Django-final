@@ -1,0 +1,30 @@
+{% load  static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="{% static 'css/inscription.css' %}">
+</head>
+<body>
+    <div id="mainbox">
+        <form action method="POST">
+            <div id="inscription">
+                {% csrf_token %}
+                <label id="input">Username</label>
+                {{form.username}} <br>
+                <label id="input">Email</label> 
+                {{form.email}} <br>
+                <label id="input">password</label>
+                {{form.password1}} <br>
+                <label id="input">Confirm Password</label>
+                {{form.password2}} <br>
+                {{form.error}}
+                <input id="input_connexion" type="submit" Value="S'inscrire">
+                <p><a href="gamemode.html">← back</a>   Vous etes deja membre?? <a href="{% url 'connexion' %}">Connexion</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

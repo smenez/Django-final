@@ -1,0 +1,42 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Sweet Stuff !</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/gamemode.css' %}">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/475/673/png-transparent-lollipop-candy-hand-painted-lollipop-watercolor-painting-food-photography.png">
+</head>
+<body>
+    <div id="profil">
+        <div class="flex-items"><a href="profil.html"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182458299220774912/image_1-removebg-preview.jpg?ex=6584c51b&is=6572501b&hm=db891545cbf4aec9a649bf7bd7c1f0a0bebdfbca78cc69848a434a1107a513e6&" width="130px" height="130px"></a></div>
+        <div class="flex-items"><a href="classement.html"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182460066759192687/image.png?ex=6584c6c0&is=657251c0&hm=eebe2f64081a34ed7e064393301d2387007ad3579ba8e5d999702ab27a9f936e&" height="130px"></a></div>
+    </div>
+    <section class="header">
+        <divc class="title-wrapper">
+          <h1 class="sweet-title">
+            <span data-text="Sweet">Sweet</span>
+            <span data-text="Stuff">Stuff</span>
+          </h1>
+          <span class="top-title">Get me all the</span>
+          <span class="bottom-title">You can find</span>
+          </div>
+         
+    </section>
+    
+    <div id="main_container">
+        <div id="gamemode">
+            <a href="memory_game.html"><img id='img_button_gamemode' src="https://cdn.discordapp.com/attachments/1165990850875117678/1182304919286452236/image.png?ex=65843642&is=6571c142&hm=374713d22837758ab87a7c4633831898b8b39ba9467d5a403647302bd3176aa5&" width="50%" height="auto"></a>
+        </div>
+        <div id="gamemode_back">
+            <a href="{% url 'connexion' %}"><img src="https://cdn.discordapp.com/attachments/1165990850875117678/1182338784684146728/image.png?ex=658455cd&is=6571e0cd&hm=7c8c0fc55cbabff2c78c0221dff6231bfa82d78a602b05ee0dbd7ee3ceb4b991&" id="backbutton"></a>
+        </div>
+        
+        <div id="gamemode">
+            <a href="mortsubite.html"><img id='img_button_gamemode' src="https://cdn.discordapp.com/attachments/1165990850875117678/1182306315540889670/image.png?ex=6584378f&is=6571c28f&hm=dd17626f41355fb569e43ca7e45fc5469be0fea2a23b030c626ab3ad77f038ca&" width="50%" height="auto"></a>
+        </div>
+    </div>
+
+
+    <!-- intérieur de la page -->
+</body>
+</html>

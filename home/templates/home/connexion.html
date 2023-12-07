@@ -1,0 +1,26 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/connexion.css' %}">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/475/673/png-transparent-lollipop-candy-hand-painted-lollipop-watercolor-painting-food-photography.png">
+</head>
+<body>
+    <div id="mainbox">
+        <div id="formulaire">
+            <form action="connexion.html" method="POST">
+                {% csrf_token %}
+                <input id='input'type="text" name="username" placeholder="Pseudo" ><br>
+                <input id='input' type="password" name="password" placeholder="Password" ><br>
+                <input id='input_connexion' type="submit" Value="Se connecter"><br>
+                <p><a href="gamemode.html">← back</a>   Vous n'avez pas de compte? <a href="{% url 'inscription' %}">S'inscrire</a></p>
+            </form>
+        </div>
+        
+    </div>
+   
+</body>
+</html>
