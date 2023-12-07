@@ -8,14 +8,12 @@ body{
     background-color: rgba(250, 235, 215, 0);
     border-color: rgba(22, 107, 182, 0.654);
     color: antiquewhite;
-    width: 100%;
-    height: 100%;
 }
 
 #formulaire{
     display: flex;
-    background-color: rgba(22, 107, 182, 0.654);
-    width: 20%;
+    
+    width: 40vw;
     height: 20%;
     align-items: center;
     justify-content: center;
@@ -23,6 +21,7 @@ body{
 }
 
 #formulaire form{
+    background-color: rgba(22, 107, 182, 0.654);
     align-items: center;
     justify-content: center;
     align-items: center;
@@ -39,6 +38,4 @@ body{
     background-color: rgba(250, 235, 215, 0);
     border-color: rgba(22, 107, 182, 0.654);
     color: rgb(227, 217, 197);
-    width: 103.2%;
-    height: 100%;
 }
