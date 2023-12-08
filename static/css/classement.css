@@ -1,5 +1,6 @@
 body{
   background-color: rgb(70, 20, 91);
+  color: antiquewhite;
   }
 
 
@@ -112,4 +113,39 @@ button {
 #user{
   font-size: 30px;
   color: white;
+}
+
+/* **************************************************************** */
+/* **************************************************************** */
+/* **************************************************************** */
+/* **************************************************************** */
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+#profilbar{
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+img{
+  transition: transform 0.5s;
+}
+
+img:hover{
+  transform: scale(1.19);
+}
+
+#rules{
+  background-image: url();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -10vh;
+
 }
