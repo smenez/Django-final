@@ -44,7 +44,10 @@ function startMemoryGame() {
             const cardValue = cards[i * grid_size + j];
             const back = document.createElement('div');
             back.classList.add('back');
-            back.style.backgroundImage = `url('/static/images/card${cardValue}.jpg')`;
+            back.style.backgroundImage = `url('/static/images/card${cardValue}.jpg')`
+            back.style.width='153px';
+            back.style.height='281px';
+            back.style.backgroundPosition='center';
 
             // Stocker la valeur de la carte en tant que data-value
             card.dataset.value = cardValue;
